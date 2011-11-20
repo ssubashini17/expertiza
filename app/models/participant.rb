@@ -1,10 +1,11 @@
 class Participant < ActiveRecord::Base
   belongs_to :user
   belongs_to :topic, :class_name => 'SignUpTopic'
-  
+  belongs_to :join_team_requests
   has_many   :comments, :dependent => :destroy
   has_many   :resubmission_times, :dependent => :destroy
   has_many   :reviews, :class_name => 'ResponseMap', :foreign_key => 'reviewer_id'
+
   
   validates_numericality_of :grade, :allow_nil => true
 

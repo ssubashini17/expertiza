@@ -14,11 +14,11 @@ development:
   adapter: mysql
   database: pg_development
   username: root
-  password:
+  password: admin
   host: localhost
 
 # Warning: The database defined as 'test' will be erased and
-# re-generated from your development database when you run 'rake'.
+# re-generated from your dev elopment database when you run 'rake'.
 # Do not set this db to the same as development or production.
 test: &test
   adapter: mysql
